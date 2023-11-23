@@ -21,7 +21,21 @@ class childPerson extends Person{
         console.log("i am from child "+this.Name);
     }
 }
+
+
 let persom2 = new childPerson("happy");
 persom2.displayChild();
 persom2.display();
 console.log(persom2.Name);
+
+
+function Employee(name, age) {
+    this.Name = name,
+        this.age=age,
+     this.display=function() {
+        console.log("my  ",this.Name," and i am", this.age+" years old");
+    }
+}
+
+
+let person3 = new Employee("raunak", 21).display();
